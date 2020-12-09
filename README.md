@@ -9,6 +9,7 @@
 ```
 * 편의를 위한 명령어
   - docker node promote <NODE>
+  
 * 기본 명령어
   - docker node update --role manager <NODE>
 ```
@@ -16,6 +17,7 @@
 ```
 * 편의를 위한 명령어
   - docker node demote <NODE>
+  
 * 기본 명령어
   - docker node update --role worker <NODE>
 ```
