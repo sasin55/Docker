@@ -1,11 +1,11 @@
 # Docker Swarm
 
-### 스웜 초기화
+### 스웜 초기화( Leader Node )
 
 ### 노드 추가
 
-### 노드 권한 변경
-1. 노드 승격( Manager Node )
+### 노드 권한 변경( Leader Node )
+1. Manager Node
 ```
 * 편의를 위한 명령어
   - docker node promote <NODE>
@@ -13,7 +13,7 @@
 * 기본 명령어
   - docker node update --role manager <NODE>
 ```
-2. 노드 강등( Woker Node )
+2. Woker Node
 ```
 * 편의를 위한 명령어
   - docker node demote <NODE>
@@ -22,10 +22,11 @@
   - docker node update --role worker <NODE>
 ```
 
-### 노드 삭제
+### 노드 삭제( Leader Node )
 ```
-docker node rm <NODE>
-docker node rm --force <NODE>
+* Manager Node일 경우 Worker Node로 변경 후 삭제
+  - docker node rm <NODE>
+  - docker node rm --force <NODE>
 ```
 
 ### 작업자 노드 사용안함
