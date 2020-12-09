@@ -25,6 +25,7 @@
 ### 노드 삭제
 ```
 docker node rm <NODE>
+docker node rm --force <NODE>
 ```
 
 ### 작업자 노드 사용안함
