@@ -7,13 +7,17 @@
 ### 노드 권한 변경
 1. 노드 승격( Manager Node )
 ```
-docker node promote <NODE>
-docker node update --role manager <NODE>
+* 편의를 위한 명령어
+  - docker node promote <NODE>
+* 기본 명령어
+  - docker node update --role manager <NODE>
 ```
 2. 노드 강등( Woker Node )
 ```
-docker node demote <NODE>
-docker node update --role worker <NODE>
+* 편의를 위한 명령어
+  - docker node demote <NODE>
+* 기본 명령어
+  - docker node update --role worker <NODE>
 ```
 
 ### 노드 삭제
